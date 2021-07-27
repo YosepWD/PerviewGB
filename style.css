@@ -1,0 +1,382 @@
+en {
+  scroll-behavior: smooth;
+}
+body {
+  background: url(img/BGLSGB1.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#test {
+  padding: 20px;
+}
+h1 {
+  text-align: center;
+  color: #fff;
+}
+p {
+  margin-bottom: 10px;
+  color: #fff;
+}
+section {
+  padding-top: 2rem;
+}
+/* f1e0 */
+/* f00d */
+
+.main2 {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box2 {
+  display: flex;
+}
+#checkbox {
+  width: 65px;
+  height: 65px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  outline: none;
+  background: white;
+  position: relative;
+}
+#checkbox:hover {
+  background: rgba(255, 255, 255, 0.747);
+}
+#checkbox::before {
+  content: "\f1e0";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "font awesome 5 free";
+  font-weight: 700;
+  font-size: 1.9rem;
+  color: rgb(41, 41, 41);
+  transition: all 2s;
+}
+#checkbox:checked::before {
+  content: "\f00d";
+}
+#checkbox:checked ~ .menus {
+  width: 260px;
+}
+.menus {
+  width: 0;
+  display: flex;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.menus .menuItems {
+  width: 65px;
+  height: 65px;
+  position: relative;
+  border-left: 1px solid rgb(165, 165, 165);
+}
+.menus .menuItems:hover {
+  background: rgba(255, 255, 255, 0.747);
+}
+.menus .menuItems i {
+  font-size: 1.8rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.fa-whatsapp {
+  color: #25d366;
+}
+.fa-instagram {
+  color: #c32aa3;
+}
+.fa-facebook-f {
+  color: #1877f2;
+}
+.fa-twitter {
+  color: #1da1f2;
+}
+.menus a {
+  color: rgb(34, 34, 34);
+}
+
+/* P */
+#pengembara {
+  padding-top: 10em;
+}
+.our-team {
+  padding: 30px 0 40px;
+  margin-bottom: 30px;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.our-team .picture {
+  display: inline-block;
+  height: 130px;
+  width: 130px;
+  margin-bottom: 50px;
+  z-index: 1;
+  position: relative;
+}
+
+.our-team .picture::before {
+  content: "";
+  width: 100%;
+  height: 0;
+  border-radius: 50%;
+  background-color: #ff0000;
+  position: absolute;
+  bottom: 135%;
+  right: 0;
+  left: 0;
+  opacity: 0.9;
+  transform: scale(3);
+  transition: all 0.3s linear 0s;
+}
+
+.our-team:hover .picture::before {
+  height: 100%;
+}
+
+.our-team .picture::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #1369ce;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.our-team .picture img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: all 0.9s ease 0s;
+}
+
+.our-team:hover .picture img {
+  box-shadow: 0 0 0 14px #f7f5ec;
+  transform: scale(0.7);
+}
+
+.our-team .title {
+  display: block;
+  font-size: 15px;
+  color: #4e5052;
+  text-transform: capitalize;
+}
+
+.our-team .social {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #000000;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  transition: all 0.5s ease 0s;
+}
+
+.our-team:hover .social {
+  bottom: 0;
+}
+
+.our-team .social li {
+  display: inline-block;
+}
+
+.our-team .social li a {
+  display: block;
+  padding: 10px;
+  font-size: 17px;
+  color: white;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+.our-team .social li a:hover {
+  color: #1369ce;
+  background-color: #f7f5ec;
+}
+/* P */
+
+/* P2 */
+
+/* P2 */
+
+/* Jumbotroon*/
+.jumbotron {
+  padding-top: 10em;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+span {
+  font-size: 9rem;
+  letter-spacing: 2rem;
+  animation: anim 2.1s linear infinite;
+}
+@keyframes anim {
+  0% {
+    color: #ffffff;
+    text-shadow: none;
+  }
+  90% {
+    color: #ffffff;
+    text-shadow: none;
+  }
+  100% {
+    color: #0026ff;
+    text-shadow: 0 0 25px #ffffff;
+  }
+}
+span:nth-child(1) {
+  animation-delay: 0.3s;
+}
+span:nth-child(2) {
+  animation-delay: 0.6s;
+}
+span:nth-child(3) {
+  animation-delay: 0.9s;
+}
+span:nth-child(4) {
+  animation-delay: 1.2s;
+}
+span:nth-child(5) {
+  animation-delay: 1.5s;
+}
+span:nth-child(6) {
+  animation-delay: 1.8s;
+}
+span:nth-child(7) {
+  animation-delay: 2.1s;
+}
+
+/* Akhir Jumbotroon*/
+
+/* Info*/
+#About {
+  padding-top: 20em;
+}
+
+/* Akhir Info*/
+
+/* Scripter*/
+#Scripter {
+  padding-top: 10em;
+}
+/* Akhir Scripter*/
+
+/* List */
+#List {
+  padding-top: 10em;
+}
+/* Akhir List */
+
+.project {
+  padding-top: 10em;
+}
+/*Macro*/
+#mcrrrd {
+  padding-top: 10em;
+}
+
+/* Bck to top */
+/* Back To Top Pure JS by igniel.com */
+#ignielToTop {
+  display: none;
+  z-index: 2;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.4s;
+  width: 45px;
+  height: 45px;
+  background: #000000 url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z' fill='%23fff'/%3E%3C/svg%3E") no-repeat center center;
+}
+#ignielToTop:hover {
+  background: #2f303f url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z' fill='%23fff'/%3E%3C/svg%3E") no-repeat center center;
+}
+/* Enc Bck to top */
+/* Style the links inside the sidenav */
+
+/* Nth*/
+#Footer {
+  padding: 5em;
+}
+
+/* Nav*/
+
+#collapsibleNavbar {
+  font-size: 17px;
+}
+
+.navbar {
+  background: rgba(0, 0, 0, 0.5);
+}
+a {
+  font-size: 20px;
+}
+li {
+  padding-right: 25px;
+  line-height: 2;
+}
+
+.navbar-brand {
+  color: #fff !important;
+}
+
+a.nav-link {
+  color: #fff !important;
+  transition: 0.2s;
+  box-sizing: border-box;
+  height: 55px;
+}
+
+a.nav-link::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 2px;
+  background: #fe0000;
+  transition: 0.2s;
+}
+
+a.nav-link:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .ml-auto {
+    text-align: center;
+  }
+}
+
+#Footer {
+  background: rgba(0, 0, 0, 0.5);
+  color: #f7f5ec;
+}
+
+#Store {
+  padding-top: 10em;
+}
